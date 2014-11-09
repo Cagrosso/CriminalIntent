@@ -5,6 +5,7 @@ import java.util.UUID;
 
 /**
  * Created by Cameron on 11/6/14.
+ * This is the Crime data type that holds all of the data for a single instance of crime.
  */
 public class Crime {
     private UUID mId;
@@ -44,5 +45,10 @@ public class Crime {
         //Generate unique identifier
         mId = UUID.randomUUID();
         mDate = new Date();
+    }
+
+    @Override
+    public String toString(){
+        return mTitle;
     }
 }
