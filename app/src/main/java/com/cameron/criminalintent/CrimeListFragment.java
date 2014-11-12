@@ -62,6 +62,7 @@ public class CrimeListFragment extends ListFragment {
             TextView dateTextView = (TextView)convertView.findViewById(R.id.crime_list_item_dateTextView);
             dateTextView.setText(c.getmDate().toString());
 
+
             CheckBox solvedCheckBox = (CheckBox)convertView.findViewById(R.id.crime_list_item_solvedCheckBox);
             solvedCheckBox.setChecked(c.ismSolved());
 
